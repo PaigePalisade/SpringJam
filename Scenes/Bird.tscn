@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://b52p2bab6n00j"]
+
+[ext_resource type="Texture2D" uid="uid://dsxkvrbqjkvsw" path="res://Sprites/boid.png" id="1_806kn"]
+[ext_resource type="Script" uid="uid://ce0rjqu38557g" path="res://Scripts/bird.gd" id="2_b2sqn"]
+
+[node name="Bird" type="Sprite2D" unique_id=563640807]
+texture_filter = 1
+scale = Vector2(4, 4)
+texture = ExtResource("1_806kn")
+script = ExtResource("2_b2sqn")
