@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cd38acm5egskc"]
+
+[ext_resource type="Texture2D" uid="uid://xu6o0jr4wapb" path="res://Sprites/bg.png" id="1_bo1nx"]
+[ext_resource type="PackedScene" uid="uid://b52p2bab6n00j" path="res://Scenes/bird.tscn" id="2_8gbba"]
+
+[node name="Node" type="Node" unique_id=1302055707]
+
+[node name="Control" type="Control" parent="." unique_id=1845588562]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="Control" unique_id=501784530]
+texture_filter = 1
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(2, 2)
+texture = ExtResource("1_bo1nx")
+
+[node name="Bird" parent="." unique_id=563640807 instance=ExtResource("2_8gbba")]
+scale = Vector2(-2, 2)

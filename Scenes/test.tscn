@@ -1,8 +1,0 @@
-[gd_scene format=3 uid="uid://cd38acm5egskc"]
-
-[ext_resource type="PackedScene" uid="uid://b52p2bab6n00j" path="res://Scenes/Bird.tscn" id="1_lc1oi"]
-
-[node name="Node" type="Node" unique_id=1302055707]
-
-[node name="Bird" parent="." unique_id=563640807 instance=ExtResource("1_lc1oi")]
-scale = Vector2(-4, 4)
