@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://d18jkygiww2nq"]
+
+[ext_resource type="Texture2D" uid="uid://bst0v76u1u56u" path="res://Sprites/evilboid.png" id="1_vnbc5"]
+[ext_resource type="Script" uid="uid://br6apttcdti45" path="res://Scripts/homing_bird.gd" id="2_7co0g"]
+
+[node name="Evilboid" type="Sprite2D" unique_id=1892979386]
+texture_filter = 1
+texture = ExtResource("1_vnbc5")
+script = ExtResource("2_7co0g")
