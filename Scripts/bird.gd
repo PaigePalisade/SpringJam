@@ -4,6 +4,7 @@ extends Sprite2D
 
 
 @onready var bullet_scene: PackedScene = preload("res://Scenes/bullet.tscn")
+@export var health: int = 75
 
 var vel: Vector2 = Vector2(0,0)
 var bullet_timer: float = 0.0

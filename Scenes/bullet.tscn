@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://dysbra1ruqplw" path="res://Sprites/bullet.png" id="1_oduel"]
 [ext_resource type="Script" uid="uid://c6ocijbuncbpk" path="res://Scripts/bullet.gd" id="2_oduel"]
 
-[node name="Sprite2D" type="Sprite2D" unique_id=1618712563]
+[node name="Bullet" type="Sprite2D" unique_id=1618712563]
 texture_filter = 1
 scale = Vector2(2, 2)
 texture = ExtResource("1_oduel")

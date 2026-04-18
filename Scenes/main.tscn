@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://xu6o0jr4wapb" path="res://Sprites/bg.png" id="1_bo1nx"]
 [ext_resource type="PackedScene" uid="uid://b52p2bab6n00j" path="res://Scenes/bird.tscn" id="2_8gbba"]
 [ext_resource type="PackedScene" uid="uid://d18jkygiww2nq" path="res://Scenes/homing_bird.tscn" id="3_8gbba"]
+[ext_resource type="PackedScene" uid="uid://baxkbv68t4frr" path="res://Scenes/health_bar.tscn" id="3_jjvhh"]
 
 [node name="Node" type="Node" unique_id=1302055707]
 
@@ -22,6 +23,8 @@ texture = ExtResource("1_bo1nx")
 
 [node name="Bird" parent="." unique_id=563640807 instance=ExtResource("2_8gbba")]
 scale = Vector2(-2, 2)
+
+[node name="HealthBar" parent="Bird" unique_id=1134903681 instance=ExtResource("3_jjvhh")]
 
 [node name="Evilboid" parent="." unique_id=1892979386 instance=ExtResource("3_8gbba")]
 visible = false

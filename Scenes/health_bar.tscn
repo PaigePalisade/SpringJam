@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://baxkbv68t4frr"]
+
+[ext_resource type="Script" uid="uid://dwmdpstvxuhxu" path="res://Scripts/health_bar.gd" id="1_78m4n"]
+
+[node name="HealthBar" type="Node" unique_id=1448002130]
+script = ExtResource("1_78m4n")
+
+[node name="bg" type="Polygon2D" parent="." unique_id=1134903681]
+scale = Vector2(0.24, 0.24)
+color = Color(1, 0, 0, 1)
+polygon = PackedVector2Array(0, 0, 100, 0, 100, 20, 0, 20)
+
+[node name="fg" type="Polygon2D" parent="bg" unique_id=1981807148]
+color = Color(0, 1, 0, 1)
+polygon = PackedVector2Array(0, 0, 100, 0, 100, 20, 0, 20)
