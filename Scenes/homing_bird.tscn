@@ -8,6 +8,7 @@ size = Vector2(20, 12)
 
 [node name="Evilboid" type="Sprite2D" unique_id=1892979386]
 texture_filter = 1
+scale = Vector2(-2, 2)
 texture = ExtResource("1_vnbc5")
 script = ExtResource("2_7co0g")
 
