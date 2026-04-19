@@ -27,5 +27,7 @@ scale = Vector2(-2, 2)
 [node name="HealthBar" parent="Bird" unique_id=1134903681 instance=ExtResource("3_jjvhh")]
 
 [node name="Evilboid" parent="." unique_id=1892979386 instance=ExtResource("3_8gbba")]
-visible = false
+position = Vector2(-41.98, 0)
 scale = Vector2(-2, 2)
+
+[node name="HealthBar" parent="Evilboid" unique_id=1448002130 instance=ExtResource("3_jjvhh")]

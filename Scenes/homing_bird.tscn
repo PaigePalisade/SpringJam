@@ -3,7 +3,17 @@
 [ext_resource type="Texture2D" uid="uid://bst0v76u1u56u" path="res://Sprites/evilboid.png" id="1_vnbc5"]
 [ext_resource type="Script" uid="uid://br6apttcdti45" path="res://Scripts/homing_bird.gd" id="2_7co0g"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7co0g"]
+size = Vector2(20, 12)
+
 [node name="Evilboid" type="Sprite2D" unique_id=1892979386]
 texture_filter = 1
 texture = ExtResource("1_vnbc5")
 script = ExtResource("2_7co0g")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1981846909]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1557208159]
+shape = SubResource("RectangleShape2D_7co0g")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
