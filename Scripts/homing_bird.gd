@@ -73,7 +73,6 @@ func _process(delta: float) -> void:
 		
 	if state == State.DEAD:
 		timer = 12.0
-		spawned = false
 		state = State.RESTING
 		explosion_timer = 0.2
 		is_hit = false
@@ -83,6 +82,7 @@ func _process(delta: float) -> void:
 		texture = explosion_texture
 	elif state == State.RESTING or state == State.GAME_OVER:
 		texture = default_texture
+		spawned = false
 		hide()
 		global_position = Vector2(-100,-100)
 		health = 100
