@@ -78,15 +78,13 @@ default_timer = 70.0
 [node name="HealthBar" parent="Evilboid4" unique_id=823234752 instance=ExtResource("3_jjvhh")]
 
 [node name="Evilboid5" parent="." unique_id=111032337 instance=ExtResource("3_8gbba")]
-position = Vector2(127, 0)
-scale = Vector2(4, 4)
+position = Vector2(84, 0)
 default_timer = 200.0
 
 [node name="HealthBar" parent="Evilboid5" unique_id=647556494 instance=ExtResource("3_jjvhh")]
 
 [node name="Evilboid6" parent="." unique_id=1167713333 instance=ExtResource("3_8gbba")]
 position = Vector2(127, 0)
-scale = Vector2(4, 4)
 default_timer = 210.0
 
 [node name="HealthBar" parent="Evilboid6" unique_id=2003265721 instance=ExtResource("3_jjvhh")]
@@ -140,7 +138,7 @@ autowrap_mode = 2
 [node name="Label2" type="Label" parent="Menu/VBoxContainer" unique_id=359325473]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.105882354, 0.12941177, 0.20392157, 1)
-text = "v1.1"
+text = "v1.2"
 horizontal_alignment = 2
 
 [connection signal="reset" from="Menu" to="HUD/ScoreCounter" method="_on_menu_reset"]
