@@ -137,6 +137,12 @@ text = "Evil Robot birds are attacking the skies! Try to destroy as many as you 
 horizontal_alignment = 1
 autowrap_mode = 2
 
+[node name="Label2" type="Label" parent="Menu/VBoxContainer" unique_id=359325473]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.105882354, 0.12941177, 0.20392157, 1)
+text = "v1.1"
+horizontal_alignment = 2
+
 [connection signal="reset" from="Menu" to="HUD/ScoreCounter" method="_on_menu_reset"]
 [connection signal="reset" from="Menu" to="Bird" method="_on_menu_reset"]
 [connection signal="reset" from="Menu" to="Evilboid" method="_on_menu_reset"]

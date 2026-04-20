@@ -87,9 +87,6 @@ func _process(delta: float) -> void:
 		hide()
 		global_position = Vector2(-100,-100)
 		health = 100
-	#print("state: %d" % state)
-	#print("explosion timer: %f" % explosion_timer)
-	#print("health: %d" % health)
 	
 
 func _on_area_2d_area_entered(area: Area2D) -> void:
