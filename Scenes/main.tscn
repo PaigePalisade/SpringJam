@@ -67,15 +67,29 @@ default_timer = 30.0
 
 [node name="Evilboid3" parent="." unique_id=862565417 instance=ExtResource("3_8gbba")]
 position = Vector2(-85, 0)
-default_timer = 200.0
+default_timer = 60.0
 
 [node name="HealthBar" parent="Evilboid3" unique_id=1522917142 instance=ExtResource("3_jjvhh")]
 
 [node name="Evilboid4" parent="." unique_id=1458635232 instance=ExtResource("3_8gbba")]
 position = Vector2(-127, 0)
-default_timer = 215.0
+default_timer = 70.0
 
 [node name="HealthBar" parent="Evilboid4" unique_id=823234752 instance=ExtResource("3_jjvhh")]
+
+[node name="Evilboid5" parent="." unique_id=111032337 instance=ExtResource("3_8gbba")]
+position = Vector2(127, 0)
+scale = Vector2(4, 4)
+default_timer = 200.0
+
+[node name="HealthBar" parent="Evilboid5" unique_id=647556494 instance=ExtResource("3_jjvhh")]
+
+[node name="Evilboid6" parent="." unique_id=1167713333 instance=ExtResource("3_8gbba")]
+position = Vector2(127, 0)
+scale = Vector2(4, 4)
+default_timer = 210.0
+
+[node name="HealthBar" parent="Evilboid6" unique_id=2003265721 instance=ExtResource("3_jjvhh")]
 
 [node name="Menu" type="Control" parent="." unique_id=477972855]
 layout_mode = 3
@@ -119,7 +133,7 @@ layout_mode = 2
 [node name="Label2" type="Label" parent="Menu/VBoxContainer/PanelContainer" unique_id=1936106284]
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
-text = "Evil Robot birds are attacking the skies! Try to destroy as many as you can. Use the mouse to move and left click to fire your weapon. Don't let them shoot you or run into you."
+text = "Evil Robot birds are attacking the skies! Try to destroy as many as you can. Use the mouse to move and left click to fire your weapon. Don't let them shoot you or run into you. You heal a bit every time you kill one."
 horizontal_alignment = 1
 autowrap_mode = 2
 
@@ -129,4 +143,6 @@ autowrap_mode = 2
 [connection signal="reset" from="Menu" to="Evilboid2" method="_on_menu_reset"]
 [connection signal="reset" from="Menu" to="Evilboid3" method="_on_menu_reset"]
 [connection signal="reset" from="Menu" to="Evilboid4" method="_on_menu_reset"]
+[connection signal="reset" from="Menu" to="Evilboid5" method="_on_menu_reset"]
+[connection signal="reset" from="Menu" to="Evilboid6" method="_on_menu_reset"]
 [connection signal="pressed" from="Menu/VBoxContainer/Button" to="Menu" method="_on_button_pressed"]

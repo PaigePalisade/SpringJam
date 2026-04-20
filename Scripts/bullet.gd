@@ -21,10 +21,10 @@ func _process(delta: float) -> void:
 		if vel.length() < 500.0:
 			vel += vel.normalized() * delta * 500.0
 		
-		if global_position.x < 0 or \
-			global_position.y < 0 or \
-			global_position.x > get_viewport_rect().size.x or \
-			global_position.y > get_viewport_rect().size.y or \
+		if global_position.x < -100 or \
+			global_position.y < -100 or \
+			global_position.x > get_viewport_rect().size.x + 100 or \
+			global_position.y > get_viewport_rect().size.y + 100 or \
 			life < 0:
 				queue_free()
 	else:

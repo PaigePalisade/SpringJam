@@ -33,6 +33,7 @@ func _process(delta: float) -> void:
 		state = State.DEAD
 		if health == 0:
 			GlobalState.score += 100
+		$"../Bird".health = min(100, $"../Bird".health + 5)
 	if GlobalState.game_over:
 		state = State.RESTING
 	
